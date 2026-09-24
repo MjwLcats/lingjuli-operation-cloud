@@ -6,6 +6,7 @@ export const color = {
   fill: { subtle: '#F2F4F7', secondary: '#EAECF0' },
   status: { success: '#12B76A', warning: '#F79009', error: '#F04438', processing: '#2563EB', disabled: '#98A2B3' },
   chart: ['#2563EB', '#12B76A', '#F79009', '#7F56D9', '#06AED4', '#F04438'],
+  auth: { panel: '#EEF6FF', panelAccent: '#CFE4FF', glow: '#5B8DEF', title: '#0D1B3E', formTitle: '#0D1426' },
 } as const;
 
 export const spacing = { 1: 4, 2: 8, 3: 12, 4: 16, 5: 20, 6: 24, 8: 32, 10: 40, 12: 48 } as const;
@@ -39,6 +40,7 @@ export const layout = {
   cardPadding: 20,
   formGap: 16,
   contentMaxWidth: 1600,
+  authCardWidth: 440,
 } as const;
 
 export const motion = { fast: 120, normal: 180, slow: 240 } as const;

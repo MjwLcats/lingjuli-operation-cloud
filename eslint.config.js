@@ -8,7 +8,7 @@ export default tseslint.config(
   js.configs.recommended,
   ...tseslint.configs.recommendedTypeChecked,
   {
-    files: ['apps/lingjuli-web-*/src/**/*.{ts,tsx}', 'packages/*/src/**/*.{ts,tsx}'],
+    files: ['apps/lingjuli-web/src/**/*.{ts,tsx}', 'packages/*/src/**/*.{ts,tsx}'],
     languageOptions: {
       globals: globals.browser,
       parserOptions: { projectService: true, tsconfigRootDir: import.meta.dirname },

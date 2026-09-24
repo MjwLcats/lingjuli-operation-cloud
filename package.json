@@ -4,9 +4,9 @@
   "type": "module",
   "packageManager": "pnpm@11.13.1",
   "scripts": {
-    "build:web": "pnpm --filter @lingjuli/web-platform --filter @lingjuli/web-merchant build",
-    "typecheck:web": "pnpm --filter @lingjuli/web-platform --filter @lingjuli/web-merchant typecheck",
-    "lint:web": "pnpm --filter @lingjuli/web-platform --filter @lingjuli/web-merchant lint"
+    "build:web": "pnpm --filter @lingjuli/web build",
+    "typecheck:web": "pnpm --filter @lingjuli/web typecheck",
+    "lint:web": "pnpm --filter @lingjuli/web lint"
   },
   "devDependencies": {
     "@eslint/js": "^9.18.0",

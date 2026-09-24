@@ -25,3 +25,8 @@ export function createApiClient(options: ApiClientOptions): AxiosInstance {
   });
   return client;
 }
+
+export function getApiErrorMessage(error: unknown, fallback: string): string {
+  if (!axios.isAxiosError<ApiResponse<unknown>>(error)) return fallback;
+  return error.response?.data.message ?? fallback;
+}

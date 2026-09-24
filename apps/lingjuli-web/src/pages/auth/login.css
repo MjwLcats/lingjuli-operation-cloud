@@ -1,0 +1,39 @@
+.lj-login-shell { min-height: 100vh; display: grid; grid-template-columns: minmax(760px, 1.62fr) minmax(520px, 1fr); background: var(--lj-color-bg-container); }
+.lj-login-brand { position: relative; overflow: hidden; min-height: 760px; padding: 64px 72px; background: var(--lj-color-auth-panel); }
+.lj-login-brandmark { position: relative; z-index: 2; display: flex; align-items: center; gap: var(--lj-spacing-3); color: var(--lj-color-text-primary); }
+.lj-login-brandmark__icon { display: grid; place-items: center; width: 40px; height: 40px; border-radius: var(--lj-radius-lg); color: var(--lj-color-text-inverse, white); font-size: 22px; background: var(--lj-color-brand-primary); box-shadow: 0 10px 24px color-mix(in srgb, var(--lj-color-brand-primary) 24%, transparent); }
+.lj-login-brandmark strong, .lj-login-brandmark small { display: block; }
+.lj-login-brandmark strong { font-size: 17px; }
+.lj-login-brandmark small { margin-top: 2px; font-size: 9px; letter-spacing: .12em; }
+.lj-login-brand__copy { position: relative; z-index: 2; width: 43%; margin-top: 92px; }
+.lj-login-brand__title.ant-typography { margin: 0; color: var(--lj-color-auth-title); font-size: clamp(38px, 3.2vw, 58px); font-weight: 650; line-height: 1.25; letter-spacing: -.035em; }
+.lj-login-brand__description.ant-typography { margin: var(--lj-spacing-5) 0 var(--lj-spacing-8); color: var(--lj-color-text-tertiary); font-size: 17px; line-height: 1.75; }
+.lj-login-benefits { display: grid; gap: var(--lj-spacing-4); }
+.lj-login-benefits > div { display: flex; align-items: center; gap: var(--lj-spacing-3); }
+.lj-login-benefits span { display: grid; place-items: center; width: 42px; height: 42px; flex: none; border-radius: 50%; color: var(--lj-color-brand-primary); font-size: 17px; background: color-mix(in srgb, white 72%, transparent); }
+.lj-login-benefits p, .lj-login-benefits strong, .lj-login-benefits small { display: block; margin: 0; }
+.lj-login-benefits strong { color: var(--lj-color-text-primary); font-size: 14px; }
+.lj-login-benefits small { margin-top: 2px; color: var(--lj-color-text-tertiary); font-size: 12px; }
+.lj-login-hero { position: absolute; z-index: 1; right: -5%; bottom: 10%; width: 64%; max-width: 760px; height: auto; object-fit: contain; mix-blend-mode: multiply; }
+.lj-login-form-panel { position: relative; display: grid; place-items: center; min-height: 760px; padding: 80px 64px 48px; background: var(--lj-color-bg-container); }
+.lj-login-language { position: absolute; top: 42px; right: 52px; display: flex; align-items: center; gap: var(--lj-spacing-2); color: var(--lj-color-text-secondary); font-size: 13px; }
+.lj-login-card { width: min(100%, var(--lj-layout-auth-card-width)); }
+.lj-login-eyebrow { color: var(--lj-color-brand-primary); font-size: 11px; font-weight: 600; letter-spacing: .16em; }
+.lj-login-title.ant-typography { margin: var(--lj-spacing-4) 0 var(--lj-spacing-2); color: var(--lj-color-auth-form-title); font-size: 34px; line-height: 1.3; }
+.lj-login-description.ant-typography { margin-bottom: var(--lj-spacing-8); font-size: 15px; }
+.lj-login-error { margin-bottom: var(--lj-spacing-4); }
+.lj-login-card .ant-form-item { margin-bottom: var(--lj-spacing-5); }
+.lj-login-card .ant-form-item-label > label { font-weight: 500; }
+.lj-login-card .ant-input-affix-wrapper { min-height: 48px; border-radius: var(--lj-radius-md); }
+.lj-login-options { display: flex; justify-content: space-between; align-items: center; margin-top: calc(var(--lj-spacing-2) * -1); }
+.lj-login-options button, .lj-login-help button { padding: 0; border: 0; color: var(--lj-color-brand-primary); background: none; cursor: pointer; }
+.lj-login-submit { margin-top: var(--lj-spacing-6); margin-bottom: var(--lj-spacing-6) !important; }
+.lj-login-submit .ant-btn { height: 48px; border-radius: var(--lj-radius-md); background: var(--lj-color-brand-primary); box-shadow: 0 10px 24px color-mix(in srgb, var(--lj-color-brand-primary) 24%, transparent); }
+.lj-login-divider { display: flex; align-items: center; gap: var(--lj-spacing-4); color: var(--lj-color-text-tertiary); font-size: 12px; }
+.lj-login-divider::before, .lj-login-divider::after { height: 1px; flex: 1; background: var(--lj-color-border-secondary); content: ''; }
+.lj-login-scan { display: flex; flex-direction: column; align-items: center; gap: var(--lj-spacing-2); margin: var(--lj-spacing-5) auto; border: 0; color: var(--lj-color-text-secondary); background: none; cursor: pointer; }
+.lj-login-scan span { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; color: var(--lj-color-text-primary); font-size: 24px; background: var(--lj-color-bg-page); }
+.lj-login-help.ant-typography { margin: var(--lj-spacing-8) 0 0; text-align: center; font-size: 11px; }
+@media (max-width: 1180px) { .lj-login-shell { grid-template-columns: 1fr 520px; } .lj-login-brand { padding: 48px; } .lj-login-brand__copy { width: 58%; } .lj-login-hero { right: -18%; width: 72%; } }
+@media (max-width: 900px) { .lj-login-shell { display: block; background: var(--lj-color-bg-page); } .lj-login-brand { min-height: 190px; padding: var(--lj-spacing-6); } .lj-login-brandmark { justify-content: center; } .lj-login-brand__copy { width: 100%; margin-top: var(--lj-spacing-6); text-align: center; } .lj-login-brand__title.ant-typography { font-size: 28px; } .lj-login-brand__description, .lj-login-benefits, .lj-login-hero { display: none; } .lj-login-form-panel { min-height: calc(100vh - 190px); padding: var(--lj-spacing-8) var(--lj-spacing-5); } .lj-login-language { top: var(--lj-spacing-4); right: var(--lj-spacing-5); } }
+@media (max-width: 520px) { .lj-login-brand { min-height: 160px; } .lj-login-brand__copy { margin-top: var(--lj-spacing-5); } .lj-login-brand__title.ant-typography { font-size: 24px; } .lj-login-form-panel { min-height: calc(100vh - 160px); place-items: start center; padding: 52px var(--lj-spacing-5) var(--lj-spacing-6); } .lj-login-language { top: var(--lj-spacing-4); } .lj-login-title.ant-typography { font-size: 28px; } }

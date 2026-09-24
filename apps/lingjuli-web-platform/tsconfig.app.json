@@ -1,5 +1,0 @@
-{
-  "extends": "../../packages/lingjuli-tooling/tsconfig.json",
-  "compilerOptions": { "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo" },
-  "include": ["src", "../../packages/lingjuli-web-ui/src", "../../packages/lingjuli-design-tokens/src"]
-}

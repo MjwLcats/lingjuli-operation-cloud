@@ -1,6 +1,6 @@
 # 项目总览
 
-Lingjuli Operation Cloud 是餐饮行业多租户 SaaS 运营平台。平台覆盖 SaaS 平台治理、集团/区域/门店管理、销售、菜品、用工、考勤、巡检、工作台、报表、AI、预测与知识库。
+同庆云是餐饮行业多租户 SaaS 运营平台。平台覆盖 SaaS 平台治理、集团/区域/门店管理、销售、菜品、用工、考勤、巡检、工作台、报表、AI、预测与知识库。
 
 ## 端与使用者
 
@@ -18,5 +18,18 @@ Lingjuli Operation Cloud 是餐饮行业多租户 SaaS 运营平台。平台覆�
 - RBAC 与 Data Scope 共同构成授权。
 - MySQL 是事实源；Milvus 是可重建的向量检索副本。
 - Design System 先于业务页面建设。
+
+## 当前实现状态
+
+项目地基已完成第一轮初始化：
+
+- Monorepo、Maven 多模块服务骨架与统一命名规范已经建立。
+- Web 当前采用单一 `apps/lingjuli-web` 应用，通过顶层路由和权限域隔离平台端与商家端；移动端位于 `apps/lingjuli-mobile`。
+- 首批 tenant、identity、authorization、organization、store 服务已经拥有独立 Flyway V001。
+- 远程 MySQL 实例已创建首批 5 个逻辑数据库并执行 V001，共建立 12 张业务表；其他服务数据库尚未初始化。
+- 当前仅完成项目基础能力和骨架，不代表销售、菜品、用工、考勤、巡检等业务功能已经实现。
+- 服务专用数据库运行账号、最小权限授权及生产级凭据托管仍属于后续基础设施工作。
+
+当前数据库实况以 [Schema 清单](05-database/schema-inventory.md) 为准，初始化方式见 [数据库初始化](05-database/database-initialization.md)。
 
 参见：[总体架构](01-architecture/architecture.md)、[服务边界](01-architecture/service-boundaries.md)、[术语表](06-business/glossary.md)。

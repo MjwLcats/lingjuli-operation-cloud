@@ -1,0 +1,31 @@
+{
+  "name": "@lingjuli/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:merchant": "vite --port 3100 --open /merchant",
+    "dev:platform": "vite --port 3101 --open /platform",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc -b --pretty false",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "@lingjuli/api-client": "workspace:*",
+    "@lingjuli/auth-client": "workspace:*",
+    "@lingjuli/design-tokens": "workspace:*",
+    "@lingjuli/web-ui": "workspace:*",
+    "@ant-design/icons": "^5.6.1",
+    "antd": "^5.22.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.8.2",
+    "vite": "^7.0.0"
+  }
+}

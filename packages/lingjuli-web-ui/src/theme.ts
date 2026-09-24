@@ -25,5 +25,7 @@ export const lingjuliTheme: ThemeConfig = {
     Table: { headerBg: color.fill.subtle, rowHoverBg: color.fill.subtle, cellPaddingBlock: 13 },
     Modal: { borderRadiusLG: radius.lg },
     Drawer: { colorBgElevated: color.bg.elevated },
+    Input: { activeBorderColor: color.brand.primary, hoverBorderColor: color.brand.hover },
+    Button: { primaryShadow: 'none', fontWeight: typography.label.fontWeight },
   },
 };

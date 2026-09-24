@@ -4,6 +4,7 @@
   --lj-color-text-primary: #182230;
   --lj-color-text-secondary: #475467;
   --lj-color-text-tertiary: #667085;
+  --lj-color-text-inverse: #ffffff;
   --lj-color-border-default: #d0d5dd;
   --lj-color-border-secondary: #eaecf0;
   --lj-color-bg-page: #f7f8fa;
@@ -12,6 +13,11 @@
   --lj-color-status-warning: #f79009;
   --lj-color-status-error: #f04438;
   --lj-color-status-processing: #2563eb;
+  --lj-color-auth-panel: #eef6ff;
+  --lj-color-auth-panel-accent: #cfe4ff;
+  --lj-color-auth-glow: #5b8def;
+  --lj-color-auth-title: #0d1b3e;
+  --lj-color-auth-form-title: #0d1426;
   --lj-spacing-1: 4px;
   --lj-spacing-2: 8px;
   --lj-spacing-3: 12px;
@@ -19,10 +25,13 @@
   --lj-spacing-5: 20px;
   --lj-spacing-6: 24px;
   --lj-spacing-8: 32px;
+  --lj-spacing-10: 40px;
+  --lj-spacing-12: 48px;
   --lj-radius-sm: 4px;
   --lj-radius-md: 6px;
   --lj-radius-lg: 8px;
   --lj-layout-page-padding: 24px;
   --lj-layout-section-gap: 24px;
   --lj-layout-card-padding: 20px;
+  --lj-layout-auth-card-width: 440px;
 }

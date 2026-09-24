@@ -1,6 +1,6 @@
 # Web 前端规则
 
-两个 Web 应用使用 React、TypeScript Strict、Vite 和 Ant Design。应用只组合共享 Design System，不复制 Token 和基础组件。
+Web 端使用单一 React、TypeScript Strict、Vite 和 Ant Design 应用。平台端与商家端按顶层路由、权限域和业务模块隔离，共享应用基础设施与 Design System，不复制 Token 和基础组件。
 
 页面负责路由参数、权限入口和组件装配。HTTP、数据转换、复杂表单、表格列、权限计算和弹窗实现分别进入 api、service、model、hooks 和 components。
 
