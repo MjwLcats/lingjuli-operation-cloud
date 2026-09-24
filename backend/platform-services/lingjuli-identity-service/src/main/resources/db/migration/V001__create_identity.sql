@@ -1,0 +1,20 @@
+CREATE TABLE user_account (
+    id BIGINT NOT NULL COMMENT '账号ID',
+    tenant_id BIGINT NOT NULL COMMENT '租户ID',
+    login_name VARCHAR(64) NOT NULL COMMENT '登录名',
+    mobile VARCHAR(32) NULL COMMENT '手机号码',
+    email VARCHAR(128) NULL COMMENT '电子邮箱',
+    password_hash VARCHAR(255) NOT NULL COMMENT '密码哈希',
+    account_status VARCHAR(32) NOT NULL COMMENT '账号状态',
+    last_login_at DATETIME(3) NULL COMMENT '最后登录时间',
+    created_by BIGINT NULL COMMENT '创建人',
+    created_at DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3) COMMENT '创建时间',
+    updated_by BIGINT NULL COMMENT '更新人',
+    updated_at DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3) ON UPDATE CURRENT_TIMESTAMP(3) COMMENT '更新时间',
+    deleted TINYINT(1) NOT NULL DEFAULT 0 COMMENT '逻辑删除标记',
+    version BIGINT NOT NULL DEFAULT 0 COMMENT '乐观锁版本',
+    PRIMARY KEY (id),
+    UNIQUE KEY uk_user_account_tenant_login (tenant_id, login_name),
+    KEY idx_user_account_tenant_mobile (tenant_id, mobile),
+    KEY idx_user_account_tenant_status (tenant_id, account_status)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='登录账号';
