@@ -1,0 +1,23 @@
+export const mobileColors = {
+  brandPrimary: '#2563EB',
+  textPrimary: '#182230',
+  textSecondary: '#475467',
+  borderDefault: '#D0D5DD',
+  backgroundPage: '#F7F8FA',
+  backgroundContainer: '#FFFFFF',
+  statusSuccess: '#12B76A',
+  statusWarning: '#F79009',
+  statusError: '#F04438',
+}
+
+export const mobileSpacing = {
+  xs: 4,
+  sm: 8,
+  md: 12,
+  lg: 16,
+  xl: 24,
+  xxl: 32,
+}
+
+export const mobileRadius = { sm: 4, md: 8, lg: 12 }
+export const mobileSize = { tapTarget: 44, button: 44, input: 44, navbar: 44 }

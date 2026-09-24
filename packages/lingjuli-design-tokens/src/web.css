@@ -1,0 +1,28 @@
+:root {
+  --lj-color-brand-primary: #2563eb;
+  --lj-color-brand-hover: #1d4ed8;
+  --lj-color-text-primary: #182230;
+  --lj-color-text-secondary: #475467;
+  --lj-color-text-tertiary: #667085;
+  --lj-color-border-default: #d0d5dd;
+  --lj-color-border-secondary: #eaecf0;
+  --lj-color-bg-page: #f7f8fa;
+  --lj-color-bg-container: #ffffff;
+  --lj-color-status-success: #12b76a;
+  --lj-color-status-warning: #f79009;
+  --lj-color-status-error: #f04438;
+  --lj-color-status-processing: #2563eb;
+  --lj-spacing-1: 4px;
+  --lj-spacing-2: 8px;
+  --lj-spacing-3: 12px;
+  --lj-spacing-4: 16px;
+  --lj-spacing-5: 20px;
+  --lj-spacing-6: 24px;
+  --lj-spacing-8: 32px;
+  --lj-radius-sm: 4px;
+  --lj-radius-md: 6px;
+  --lj-radius-lg: 8px;
+  --lj-layout-page-padding: 24px;
+  --lj-layout-section-gap: 24px;
+  --lj-layout-card-padding: 20px;
+}

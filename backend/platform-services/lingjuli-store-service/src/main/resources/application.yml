@@ -1,0 +1,10 @@
+server.port: ${SERVER_PORT:9204}
+spring:
+  application.name: lingjuli-store-service
+  datasource:
+    url: ${MYSQL_URL:jdbc:mysql://127.0.0.1:3306/lingjuli_store?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai}
+    username: ${MYSQL_USERNAME:root}
+    password: ${MYSQL_PASSWORD:}
+  flyway.enabled: ${FLYWAY_ENABLED:true}
+  cloud.nacos.discovery.enabled: ${NACOS_DISCOVERY_ENABLED:false}
+management.endpoints.web.exposure.include: health,info,prometheus

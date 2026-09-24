@@ -1,0 +1,6 @@
+packages:
+  - "apps/lingjuli-web-*"
+  - "packages/*"
+
+allowBuilds:
+  esbuild: true

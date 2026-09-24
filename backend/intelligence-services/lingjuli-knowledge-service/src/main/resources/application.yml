@@ -1,0 +1,8 @@
+server.port: ${SERVER_PORT:9232}
+spring:
+  application.name: lingjuli-knowledge-service
+  datasource: {url: '${MYSQL_URL:jdbc:mysql://127.0.0.1:3306/lingjuli_knowledge?serverTimezone=Asia/Shanghai}', username: '${MYSQL_USERNAME:root}', password: '${MYSQL_PASSWORD:}'}
+  flyway.enabled: ${FLYWAY_ENABLED:true}
+  cloud.nacos.discovery.enabled: ${NACOS_DISCOVERY_ENABLED:false}
+lingjuli.knowledge.milvus.endpoint: ${MILVUS_ENDPOINT:http://127.0.0.1:19530}
+management.endpoints.web.exposure.include: health,info,prometheus

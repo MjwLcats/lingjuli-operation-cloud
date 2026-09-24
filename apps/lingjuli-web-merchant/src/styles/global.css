@@ -1,0 +1,4 @@
+* { box-sizing: border-box; }
+html, body, #root { min-height: 100%; margin: 0; }
+body { background: var(--lj-color-bg-page); color: var(--lj-color-text-primary); font-family: Inter, "PingFang SC", "Microsoft YaHei", sans-serif; }
+:focus-visible { outline: 2px solid var(--lj-color-brand-primary); outline-offset: 2px; }

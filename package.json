@@ -1,0 +1,18 @@
+{
+  "name": "@lingjuli/operation-cloud",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.13.1",
+  "scripts": {
+    "build:web": "pnpm --filter @lingjuli/web-platform --filter @lingjuli/web-merchant build",
+    "typecheck:web": "pnpm --filter @lingjuli/web-platform --filter @lingjuli/web-merchant typecheck",
+    "lint:web": "pnpm --filter @lingjuli/web-platform --filter @lingjuli/web-merchant lint"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "eslint": "^9.18.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "globals": "^15.14.0",
+    "typescript-eslint": "^8.20.0"
+  }
+}

@@ -1,0 +1,28 @@
+.lj-app-page {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: var(--lj-layout-page-padding);
+}
+
+.lj-page-header {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--lj-spacing-4);
+  margin-bottom: var(--lj-layout-section-gap);
+}
+
+.lj-page-header__title {
+  margin: 0;
+  color: var(--lj-color-text-primary);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+.lj-page-header__description {
+  margin: var(--lj-spacing-2) 0 0;
+  color: var(--lj-color-text-secondary);
+}
+
+.lj-page-section { margin-bottom: var(--lj-layout-section-gap); }
+.lj-state { padding: 48px; text-align: center; }
